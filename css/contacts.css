@@ -1,0 +1,24 @@
+.info-n-codes {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#qr-codes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#qr-codes img {
+    width: 200px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    #qr-codes {
+        flex-direction: row;
+    }
+}
