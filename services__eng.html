@@ -14,9 +14,12 @@
         rel="stylesheet" />
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/service.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!--[if lt IE 10]>
     <script src="js/html5shiv.min.js"></script>
     <![endif]-->
@@ -78,8 +81,8 @@
                                 </li>
                             </ul>
                             <!-- CN/ENG Language Switch -->
-                            <a href="./services__cn.html" id="language-switch"><span id="language-switch__cn">中</span> /
-                                <span id="language-switch__eng" class="language-switch__active">Eng</span></a>
+                            <!-- <a href="./services__cn.html" id="language-switch"><span id="language-switch__cn">中</span> /
+                                <span id="language-switch__eng" class="language-switch__active">Eng</span></a> -->
                             <!-- END RD Navbar Nav -->
 
                             <!-- RD Navbar Toggle -->
@@ -115,6 +118,24 @@
                             Service</button></li>
                     <li><button class="service-menu-buttons" onclick=showMTS()>MTS</button></li>
                 </ol>
+                <div id="mobile-dropdown-menu">
+                    <button class="dropbtn">Please select a service <img class="dropdown-arrow"
+                            src="./images/dropdown-arrow.svg"> </button>
+                    <div class="dropdown-content">
+                        <button class="service-menu-buttons" onclick=showNail()>Nail</button>
+                        <button class="service-menu-buttons" onclick=showLashExtension()>Lash Extension</button>
+                        <button class="service-menu-buttons sub-list" onclick=showLashFullSet()>- Lash Full Set</button>
+                        <button class="service-menu-buttons sub-list" onclick=showLashFill()>- Lash Fill
+                            Service</button>
+                        <button class="service-menu-buttons sub-list" onclick=showLashRemoval()>- Lash Removal</button>
+                        <button class="service-menu-buttons" onclick=showSemiPermanantMakeup()>Semi-Permanant
+                            Makeup</button>
+                        <button class="service-menu-buttons sub-list" onclick=showBrowService()>- Brow Service</button>
+                        <button class="service-menu-buttons sub-list" onclick=showEyelinerService()>- Eyeliner
+                            Service</button>
+                        <button class="service-menu-buttons" onclick=showMTS()>MTS</button>
+                    </div>
+                </div>
             </div>
             <div>
                 <div class="service-details" id="service-details__nail">
@@ -145,12 +166,12 @@
                             <p class="service-price">- $50</p>
                         </div>
                     </div>
-                    <div class="service-price-list service-other-services">
-                            <h3 id="other-services">Other Services</h3>
-                            <span class="service-name">NAIL REMOVAL (ACRYLIC)  -  $20</span>
-                            <span class="service-name">NAIL REMOVAL (GEL COLOR)  -  $10</span>
-                            <span class="service-name">EXTRA LENGTH  -  $5+</span>
-                            <span class="service-name">NAIL DESIGN  -  $5+</span>
+                    <div class="service-price-list" id="service-other-services">
+                        <h3 id="other-services">Other Services</h3>
+                        <span class="service-name">NAIL REMOVAL (ACRYLIC) - $20</span>
+                        <span class="service-name">NAIL REMOVAL (GEL COLOR) - $10</span>
+                        <span class="service-name">EXTRA LENGTH - $5+</span>
+                        <span class="service-name">NAIL DESIGN - $5+</span>
                     </div>
                 </div>
                 <div class="service-details" id="service-details__lash-extension">
