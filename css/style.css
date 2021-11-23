@@ -9043,9 +9043,7 @@ html:not(.lt-ie10) .not-animated {
 * @section      Components
 * @description  This section holds all elements style declarations of template
 */
-#logo {
-    max-width: 2rem;
-}
+
 /*
 * @subsection   Buttons
 */
@@ -14276,6 +14274,23 @@ button.swiper-pagination-bullet {
 }
 
 /* Custom Code */
+#logo {
+    max-width: 1rem;
+}
+
+@media only screen and (min-width: 375px) {
+    #logo {
+        max-width: 1rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #logo {
+        max-width: 150px;
+        margin-left: 20px;
+    }
+}
+
 #gallery-photos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -14305,118 +14320,4 @@ button.swiper-pagination-bullet {
 
 .gallery-photo {
     width: 260px;
-}
-
-.our-services {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-}
-
-#service-menu {
-    width: 100%;
-    padding: 25px 0 0;
-}
-
-#service-menu h1 {
-    font-size: 25px;
-    text-align: left;
-    margin-left: 15px;
-}
-
-#service-menu__list {
-    text-align: left;
-    border-right: 0.5px solid #d9d0c1;
-}
-
-.service-menu-buttons {
-    text-align: left;
-    padding: 0 5px;
-    margin: 10px;
-    width: calc(100% - 20px);
-}
-
-.service-menu-buttons:hover {
-    color: red;
-    background-color: #d9d0c1;
-}
-
-.service-details {
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.service-general-introduction {
-    margin-bottom: 30px;
-    width: 80%;
-    text-align: center;
-    font-style: italic;
-    font-size: 12px;
-}
-
-.service-price-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-    border: 1px solid #d9d0c1;
-    padding: 20px;
-    width: 700px;
-}
-
-.service-detail-n-price {
-    margin-left: 25px;
-    width: 210px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-.service-name {
-    font-size: 18px;
-    font-family: "Playfair Display", serif;
-    font-style: italic;
-    margin-bottom: 15px;
-}
-
-.service-description {
-    text-align: right;
-    font-size: 11px;
-}
-
-.sub-list {
-    font-size: 80%;
-    padding-left: 20px;
-}
-
-#service-details__lash-extension,
-#service-details__full-set,
-#service-details__fill-service,
-#service-details__lash-removal,
-#service-details__semi-permanant-makeup,
-#service-details__brow,
-#service-details__eyeliner,
-#service-details__mts {
-    display: none;
-}
-
-#service__lash-fill-service__name-n-price span {
-    white-space: nowrap;
-    margin-bottom: 15px;
-}
-
-.service-images {
-    width: 220px;
-}
-
-.service-other-services {
-    flex-direction: column;
-}
-
-#other-services {
-    letter-spacing: 3px;
-    margin-bottom: 20px;
 }

@@ -1,0 +1,192 @@
+.our-services {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* border: 1px solid red; */
+}
+
+#service-menu {
+    width: 100%;
+    padding: 25px 0 0;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    justify-content: center;
+    align-items: center;
+}
+
+#service-menu__list {
+    display: none;
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+/* Dropdown service menu for mobile users: start */
+/* Dropdown Button */
+.dropbtn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 5px 16px;
+    font-size: 12px;
+    border: 1px solid rgba(107, 107, 107, 0.6);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-arrow {
+    width: 10px;
+    margin-left: 5px;
+}
+
+#mobile-dropdown-menu {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#mobile-dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+/* Dropdown service menu for mobile users: end */
+
+#service-menu h1 {
+    font-size: 19px;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.service-menu-buttons {
+    text-align: left;
+    padding: 0 5px;
+    margin: 10px;
+    width: calc(100% - 20px);
+}
+
+.service-menu-buttons:hover {
+    color: red;
+    background-color: #d9d0c1;
+}
+
+.service-details {
+    width: 100vw;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.service-general-introduction {
+    margin-bottom: 30px;
+    width: 80%;
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.service-price-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    border: 1px solid #d9d0c1;
+    padding: 20px;
+    width: 100%;
+}
+
+.service-detail-n-price {
+    margin-left: 25px;
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.service-name {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.service-description {
+    text-align: right;
+    font-size: 11px;
+}
+
+.sub-list {
+    font-size: 80%;
+    padding-left: 20px;
+}
+
+#service-details__lash-extension,
+#service-details__full-set,
+#service-details__fill-service,
+#service-details__lash-removal,
+#service-details__semi-permanant-makeup,
+#service-details__brow,
+#service-details__eyeliner,
+#service-details__mts {
+    display: none;
+}
+
+#service__lash-fill-service__name-n-price span {
+    white-space: nowrap;
+    margin-bottom: 15px;
+}
+
+.service-images {
+    width: 220px;
+}
+
+#service-other-services {
+    display: flex;
+    flex-direction: column;
+}
+
+#other-services {
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 580px) {
+    .service-price-list {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 920px) {
+    #mobile-dropdown-menu {
+        display: none;
+    }
+
+    .our-services {
+        grid-template-columns: 1fr 4fr;
+    }
+
+    #service-menu {
+        display: unset;
+    }
+
+    #service-menu__list {
+        display: initial;
+        text-align: left;
+        border-right: 0.5px solid #d9d0c1;
+    }
+}
+
+@media only screen and (min-width: 1280) {
+    #service-menu h1 {
+        font-size: 25px;
+    }
+}
